@@ -1,0 +1,252 @@
+body {
+    font-family: "Poppins";
+    margin: 20px;
+    background-color: #e1e1e1;
+    color: #1e1e1e;
+    transition: 0.5s;
+  }
+  
+  h1 {
+    text-align: center;
+    font-weight: bolder;
+  }
+
+  .top-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .form-container {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .title-container {
+    width: 50%;
+    text-align: center;
+  }
+  
+  #event-form {
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+  }
+  
+  #event-list {
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+  }
+  
+  #events {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .event-item {
+    display: inline-block;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  .input-field {
+    font-family: "Poppins";
+    border: none;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    padding: 10px;
+    outline: none;
+    width: 100%;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    transition: 0.5s;
+  }
+
+  .password-input-field {
+    font-family: "Poppins";
+    border: none;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    padding: 10px;
+    outline: none;
+    width: 25%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    transition: 0.5s;
+  }
+  
+  .input-field:hover {
+    background-color: #eaeaea;
+  }
+
+  .password-input-field:hover {
+    background-color: #eaeaea;
+  }
+  
+  .button {
+    font-family: "Poppins";
+    background-color: #69b15c;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    outline: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #579f4d;
+  }
+  
+  .delete-button {
+    font-family: "Poppins";
+    background-color: #f14d4d;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    outline: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .delete-button:hover {
+    background-color: #c63f3f;
+  }
+
+  .toggle-mode-button {
+    font-family: "Poppins";
+    background-color: #123456;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    outline: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+  }
+  
+  .toggle-mode-button:hover {
+    background-color: #123456;
+  }
+
+  .add-to-calendar-button {
+    font-family: "Poppins";
+    background-color: #007acc;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    outline: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .add-to-calendar-button:hover {
+    background-color: #005a95;
+  }
+  
+  h2 {
+    margin-top: 0;
+  }
+  
+  ul {
+    padding-left: 0;
+  }
+  
+  .event-item p {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+  
+  .event-item h3 {
+    margin-top: 0;
+  }
+
+/* Light Mode */
+body.light-mode {
+    background-color: #e1e1e1;
+    color: #1e1e1e;
+    transition: 0.5s;
+  }
+  
+  #event-form.light-mode {
+    background-color: #e1e1e1;
+    transition: 0.5s;
+  }
+  
+  .event-item.light-mode {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+  }
+  
+  .input-field.light-mode {
+    background-color: #f5f5f5;
+    transition: 0.5s;
+  }
+  
+  .password-input-field.light-mode {
+    background-color: #f5f5f5;
+    transition: 0.5s;
+  }
+
+  .input-field:hover.light-mode {
+    background-color: #eaeaea;
+  }
+
+  .password-input-field:hover.light-mode {
+    background-color: #eaeaea;
+  }
+  /* Dark Mode */
+  body.dark-mode {
+    background-color: #1e1e1e;
+    color: #e1e1e1;
+    transition: 0.5s;
+  }
+  
+  #event-form.dark-mode {
+    background-color: #333;
+    transition: 0.5s;
+  }
+  
+  .event-item.dark-mode {
+    background-color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    transition: 0.5s;
+  }
+  
+  .input-field.dark-mode {
+    background-color: #2a2a2a;
+    color: #f5f5f5;
+    transition: 0.5s;
+  }
+  
+  .password-input-field.dark-mode {
+    background-color: #2a2a2a;
+    color: #f5f5f5;
+    transition: 0.5s;
+  }
+
+  .input-field:hover.dark-mode {
+    background-color: #212121;
+  }
+
+  .password-input-field:hover.dark-mode {
+    background-color: #212121;
+  }
+  
